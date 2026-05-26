@@ -1,0 +1,32 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int arr[10];
+    int i;
+
+    // Input array elements
+    for(i = 0; i < 10; i++) {
+        printf("Enter the value of array: ");
+        scanf("%d", &arr[i]);
+    }
+
+    // Check even or odd
+    for(i = 0; i < 10; i++) {
+        if(arr[i] % 2 == 0) {
+            printf("%d is Even\n", arr[i]);
+        }
+        else {
+            printf("%d is Odd\n", arr[i]);
+        }
+    }
+
+    // Print array elements
+    printf("The array elements are:\n");
+
+    for(i = 0; i < 10; i++) {
+        printf("%d\t", arr[i]);
+    }
+
+    return 0;
+}
